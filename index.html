@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera página</title>
-</head>
-<body>
-  <h1>¡Hola mundo desde GitHub Pages!</h1>
-  <p>Esta es mi primera página web 😊</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi IA con Flowise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🤖 Mi Asistente IA con Flowise</h1>
+    <p>Habla con mi IA directamente desde aquí:</p>
+
+    <!-- Chatbot de Flowise -->
+    <script>
+      window.chatbotConfig = {
+        chatflowid: "TU_CHATFLOW_ID",
+        apiHost: "https://tuservidor.flowiseai.com"
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/FlowiseAI/flowise-embed/dist/web.js"
+      defer
+    ></script>
+  </body>
 </html>
+
